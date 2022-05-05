@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Bicycle = ({ bicycle }) => {
-    const { name, img, description, price, supplier } = bicycle
+    const { name, img, description, price, supplier, quantity } = bicycle
     return (
         <div className=' col-md-4 col-lg-4 col-sm-12 g-4'>
             <div class="col">
@@ -11,7 +12,9 @@ const Bicycle = ({ bicycle }) => {
                         <h5 class="card-title">{name}</h5>
                         <p class="card-text">{description}</p>
                         <h6>Supplier Name: {supplier}</h6>
+                        <h6>Quantity: {quantity}</h6>
                         <h3>Price: ${price}</h3>
+                        <button type="button" class="btn btn-info">Stock Update</button>
                     </div>
                 </div>
             </div>
