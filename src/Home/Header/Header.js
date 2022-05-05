@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <div className='container'>
+        <div className='container mt-3'>
             <div className='row'>
                 <div className='col-md-6 d-flex justify-content-center align-items-center flex-column'>
                     <h1 className='text-info mb-5'>Best Warehouse For <span className='text-dark'><b>Bicycle!</b></span></h1>

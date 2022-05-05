@@ -13,9 +13,9 @@ const Inventory = () => {
 
 
     return (
-        <div>
-            <h2 className='text-center text-info'>This is <span className='text-dark'>Inventory</span></h2>
-            <div>
+        <div className='container mt-5'>
+            <h1 className='text-center text-info'>This is <span className='text-dark'><b>Inventory</b></span></h1>
+            <div className='row'>
                 {
                     bicycles.map(bicycle => <Bicycle
                         key={bicycle.id}
