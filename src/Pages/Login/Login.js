@@ -1,9 +1,11 @@
 import React, { useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 import Loading from '../../Shared/Loading/Loading';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Login = () => {
@@ -14,17 +16,26 @@ const Login = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+    const [sendPasswordResetEmail, sending, error1] = useSendPasswordResetEmail(
+        auth
+    );
 
     const navigate = useNavigate();
     const emailRef = useRef('')
     const passwordRef = useRef('')
 
-    if (loading) {
+    if (loading || sending) {
         return <Loading></Loading>
     }
 
     if (user) {
         navigate('/')
+    }
+
+    const resetPassword = async (event) => {
+        const email = emailRef.current.value;
+        await sendPasswordResetEmail(email);
+        toast("sent email")
     }
 
 
@@ -53,6 +64,7 @@ const Login = () => {
                 </div>
                 <button type="submit" className="btn btn-info">LogIn</button>
                 <p>New to Bicycle House?   <Link to='/signup'>Signup</Link></p>
+                <p>Forgate Password? <button className='btn btn-white text-primary' onClick={resetPassword}>Reset</button></p>
             </form>
             <SocialLogin></SocialLogin>
         </div>
