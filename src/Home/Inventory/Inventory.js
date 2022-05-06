@@ -5,7 +5,7 @@ const Inventory = () => {
     const [bicycles, setBicycles] = useState([]);
 
     useEffect(() => {
-        fetch('bicyle.json')
+        fetch('http://localhost:5000/cycle')
             .then(res => res.json())
             .then(data => setBicycles(data))
     }, [])
@@ -18,7 +18,7 @@ const Inventory = () => {
             <div className='row'>
                 {
                     bicycles.map(bicycle => <Bicycle
-                        key={bicycle.id}
+                        key={bicycle._id}
                         bicycle={bicycle}
                     ></Bicycle>)
                 }

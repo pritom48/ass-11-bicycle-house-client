@@ -1,56 +1,56 @@
 [
     {
         "id": 1,
-        "name": "mounten bicyle",
-        "description": "We stored best bicycle in the world! Our bicycle is always different from others. we have best unique bicycle the world.",
+        "name": "Road Bikes",
+        "description": "Road bicycles are designed to be ridden fast on smooth pavement. They have smooth, skinny tires and 'drop' handlebars, and can be used for on-road racing. They are usually lighter than other types of bicycles. They can be ridden on paved trails, but most people find them uncomfortable and unstable on unpaved trails. Most road bikes are not capable of carrying heavy loads, so are not very suitable for commuting or touring.",
         "price": 250,
         "quantity": 25,
-        "supplier": "pritom das",
-        "img": "https://pngimg.com/uploads/bicycle/bicycle_PNG5361.png"
+        "supplier": "Adam luis",
+        "img": "https://www.sefiles.net/merchant/91/images/site/giant_defy_composite_3_compact_12_z-slimC.jpg?t=1517345073613"
     },
     {
         "id": 2,
-        "name": "mounten bicyle",
-        "description": "We stored best bicycle in the world! Our bicycle is always different from others. we have best unique bicycle the world.",
-        "price": 250,
-        "quantity": 25,
-        "supplier": "pritom das",
-        "img": "https://pngimg.com/uploads/bicycle/bicycle_PNG5361.png"
+        "name": "Cyclocross Bikes",
+        "description": "Cyclocross bicycles are a special type of road bike designed to be raced on a mixed surface course (combination of pavement, unpaved trails, gravel, grass). They have a drop handlebar like regular road bikes, but the tires are a littler wider for more off-road traction, and they have a different style of brake that helps to prevent mud buildup in the frame. Cyclocross bicycles are sometimes called 'cross bikes or cx bikes for short.",
+        "price": 350,
+        "quantity": 23,
+        "supplier": "Rupom alu",
+        "img": "https://www.sefiles.net/merchant/91/images/site/raleigh_rx_13_z-slimC.jpg?t=1517345246716"
     },
     {
         "id": 3,
-        "name": "mounten bicyle",
-        "description": "We stored best bicycle in the world! Our bicycle is always different from others. we have best unique bicycle the world.",
-        "price": 250,
-        "quantity": 25,
-        "supplier": "pritom das",
-        "img": "https://pngimg.com/uploads/bicycle/bicycle_PNG5361.png"
+        "name": "Touring Bikes",
+        "description": "Touring bicycles are another special type of road bike. They are designed to be ridden on pavement, but are more durable for use on self-supported long-distance riding. They have all of the necessary mounting bolts for cargo racks and fenders, and although they still have a drop handlebar, they usually have a more relaxed frame design so that the rider is more upright, for more comfort when riding long distances for multiple days at a time.",
+        "price": 320,
+        "quantity": 30,
+        "supplier": "Cristopar nolan",
+        "img": "https://www.sefiles.net/merchant/91/images/site/surly-longhaultrucker-slimC.jpg?t=1517345454559"
     },
     {
         "id": 4,
-        "name": "mounten bicyle",
-        "description": "We stored best bicycle in the world! Our bicycle is always different from others. we have best unique bicycle the world.",
-        "price": 250,
-        "quantity": 25,
-        "supplier": "pritom das",
-        "img": "https://pngimg.com/uploads/bicycle/bicycle_PNG5361.png"
+        "name": "Adventure Road Bikes",
+        "description": "Adventure Road Bicycles are one of the newest categories of bicycle. They are sometimes called all-road bikes, any-road bikes, or gravel bikes, and are the most versatile sub-category of road bike. Similar to cyclocross bikes, they have drop handlebars and the ability to use wider tires. The frame geometry is longer and more upright compared to a cyclocross bike, however, making these bikes more suitable for long days in the saddle, light touring, and commuting.",
+        "price": 247,
+        "quantity": 46,
+        "supplier": "wil smith",
+        "img": "https://www.sefiles.net/merchant/91/images/site/jamis-renegade-expat-slimC.jpg?t=1517348217971"
     },
     {
         "id": 5,
-        "name": "mounten bicyle",
-        "description": "We stored best bicycle in the world! Our bicycle is always different from others. we have best unique bicycle the world.",
-        "price": 250,
-        "quantity": 25,
-        "supplier": "pritom das",
-        "img": "https://pngimg.com/uploads/bicycle/bicycle_PNG5361.png"
+        "name": "Triathlon/Time Trial Bikes",
+        "description": "Triathlon/Time Trial Bicycles are road bikes with a special design that maximizes their aerodynamic properties. The handlebars are also a special aerodynamic design that allows you to crouch forward while riding, to minimize the wind resistance against your body. Triathlon/time trial races usually have staggered starts, where each racer starts on his/her own; these bicycles are usually not allowed to be used in mass-start races.",
+        "price": 450,
+        "quantity": 17,
+        "supplier": "Jhony Deap",
+        "img": "https://www.sefiles.net/merchant/91/images/site/giant_trinity_composite_1_13_z-slimC.jpg?t=1517345634792"
     },
     {
         "id": 6,
-        "name": "mounten bicyle",
-        "description": "We stored best bicycle in the world! Our bicycle is always different from others. we have best unique bicycle the world.",
-        "price": 250,
-        "quantity": 25,
-        "supplier": "pritom das",
-        "img": "https://pngimg.com/uploads/bicycle/bicycle_PNG5361.png"
+        "name": "Mountain Bikes",
+        "description": "Mountain Bicycles are design for riding rough off-road trails. They have flat or upright handlebars, and a very low gear range for pedaling up steep trails. Most mountain bikes have some type of shock absorbers or suspension. Mountain bikes with front suspension only are called hardtails; mountain bikes with both front and rear suspension are called full-suspension bikes or duallies.",
+        "price": 390,
+        "quantity": 22,
+        "supplier": "Angleliya",
+        "img": "https://www.sefiles.net/merchant/91/images/site/raleigh_talus29_spt_lime_13_z-slimC.jpg?t=1517346202611"
     }
 ]
