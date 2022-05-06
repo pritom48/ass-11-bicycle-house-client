@@ -29,6 +29,12 @@ const NavBar = () => {
                             <Link className="nav-link" to="/blog">Blog</Link>
                         </li>
                         <li className="nav-item">
+                            <Link className="nav-link" to="/addcycle">Add Cycle</Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link className="nav-link" to="/managecycle">Manage Cycle</Link>
+                        </li>
+                        <li className="nav-item">
                             {
                                 user ?
                                     <button onClick={handleSignOut} type="button" class="btn btn-info">SignOut</button>
