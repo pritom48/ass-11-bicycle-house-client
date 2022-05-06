@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
 
 
 const Login = () => {
@@ -37,17 +38,18 @@ const Login = () => {
         <div className='container w-50 mt-5 mb-5'>
             <h2 className='text-center text-info'>Please <span className='text-dark'>Login !!</span></h2>
             <form onSubmit={handleloginSubmit}>
-                <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input ref={emailRef} type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+                <div className="mb-3">
+                    <label for="exampleInputEmail1" className="form-label">Email address</label>
+                    <input ref={emailRef} type="email" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
                 </div>
-                <div class="mb-3">
-                    <label for="exampleInputPassword1" class="form-label">Password</label>
-                    <input ref={passwordRef} type="password" class="form-control" id="exampleInputPassword1" />
+                <div className="mb-3">
+                    <label for="exampleInputPassword1" className="form-label">Password</label>
+                    <input ref={passwordRef} type="password" className="form-control" id="exampleInputPassword1" />
                 </div>
-                <button type="submit" class="btn btn-primary">LogIn</button>
+                <button type="submit" className="btn btn-info">LogIn</button>
                 <p>New to Bicycle House?   <Link to='/signup'>Signup</Link></p>
             </form>
+            <SocialLogin></SocialLogin>
         </div>
     );
 };
