@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import SocialLogin from '../../Shared/SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
 
 const SignUp = () => {
 
@@ -18,6 +19,9 @@ const SignUp = () => {
     const emailRef = useRef('')
     const passwordRef = useRef('')
 
+    if (loading) {
+        return <Loading></Loading>
+    }
 
     if (user) {
         navigate('/home')
