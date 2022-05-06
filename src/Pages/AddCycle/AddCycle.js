@@ -35,13 +35,13 @@ const AddCycle = () => {
                 console.log(result)
             })
 
-        toast('add')
+        toast('New Item added')
 
     }
 
     return (
         <div className='container w-75 mx-auto'>
-            <h2>Add cycle</h2>
+            <h2 className='text-center'>Add Bicycle</h2>
             <form onSubmit={handleAddCycle}>
                 <div className="input-group mb-3">
                     <span className="input-group-text" id="inputGroup-sizing-default">Name</span>

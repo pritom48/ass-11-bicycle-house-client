@@ -1,8 +1,26 @@
 import React from 'react';
+import useCycle from '../Hooks/useCycle';
 
 const ManageCycleTable = ({ bicycle }) => {
+    const [bicycles, setBicycles] = useCycle();
 
-    const { name, price, quantity, supplier } = bicycle;
+    const { name, price, quantity, supplier, _id } = bicycle;
+
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure to delete?')
+        if (proceed) {
+            const url = `http://localhost:5000/cycle/${id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data)
+                    const remaining = bicycles.filter(bicycle => bicycle._id !== id)
+                    setBicycles(remaining)
+                })
+        }
+    }
 
     return (
 
@@ -12,7 +30,7 @@ const ManageCycleTable = ({ bicycle }) => {
             <td>{supplier}</td>
             <td>{quantity}</td>
             <td>{price}</td>
-            <td><button type="button" class="btn btn-danger">Delete</button></td>
+            <td><button onClick={() => handleDelete(_id)} type="button" class="btn btn-danger">Delete</button></td>
         </tr>
 
     );

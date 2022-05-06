@@ -13,7 +13,7 @@ const ManageCycle = () => {
 
     return (
         <div className='container'>
-            <h2>manage all cycle : {bicycles.length}</h2>
+            <h2 className='text-center'>Total Itam (Cycle) : {bicycles.length}</h2>
             <table className='table'>
                 <thead>
                     <tr>
