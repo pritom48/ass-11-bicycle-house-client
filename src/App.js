@@ -8,6 +8,7 @@ import CycleDetail from './Pages/CycleDetail/CycleDetail';
 import Login from './Pages/Login/Login';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
 import ManageCycle from './Pages/ManageCycle/ManageCycle';
+import MyItem from './Pages/MyItem/MyItem';
 import SignUp from './Pages/SignUp/SignUp';
 import Footer from './Shared/Footer/Footer';
 import NavBar from './Shared/NavBar/NavBar';
@@ -29,6 +30,11 @@ function App() {
         <Route path='/managecycle' element={
           <RequireAuth>
             <ManageCycle></ManageCycle>
+          </RequireAuth>
+        }></Route>
+        <Route path='/myitem' element={
+          <RequireAuth>
+            <MyItem></MyItem>
           </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>
