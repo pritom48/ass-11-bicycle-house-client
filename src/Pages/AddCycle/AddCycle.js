@@ -21,7 +21,7 @@ const AddCycle = () => {
 
         const data = { name, description, supplier, quantity, price, img }
 
-        const url = `http://localhost:5000/cycle`
+        const url = `https://hidden-taiga-01950.herokuapp.com/cycle`
         fetch(url, {
             method: 'POST',
             headers: {

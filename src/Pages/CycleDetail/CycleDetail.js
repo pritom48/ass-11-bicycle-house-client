@@ -7,7 +7,7 @@ const CycleDetail = () => {
     const [cycle, setCycle] = useState({})
 
     useEffect(() => {
-        const url = `http://localhost:5000/cycle/${cycleId}`
+        const url = `https://hidden-taiga-01950.herokuapp.com/cycle/${cycleId}`
 
         fetch(url)
             .then(res => res.json())

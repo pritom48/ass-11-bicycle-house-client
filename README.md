@@ -1,8 +1,17 @@
-# Getting Started with Create React App
+# Bicycle House
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live link [Bicycle House](https://bicycle-house-cda08.web.app/).
 
-## Available Scripts
+## Features
+1. It’s a bicycle inventory management website.
+2. Where any valid user can update an inventory of bicycles.
+3. If he/she adds any new bicycle it can be viewed from home.
+4.  Users can manage bicycles and delete bicycles.
+5. Firebase has been used to authenticate the user.
+6.  Data will be loaded and saved in the MongoDB database.
+
+## Use teach
+React.js, Javascript, ES6, React Router, Firebase, ExpressJs, NodeJs, MongoDB, HTML5, CSS3, Bootstrap, React Hook
 
 In the project directory, you can run:
 

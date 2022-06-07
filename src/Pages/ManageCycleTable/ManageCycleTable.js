@@ -9,7 +9,7 @@ const ManageCycleTable = ({ bicycle }) => {
     const handleDelete = id => {
         const proceed = window.confirm('Are you sure to delete?')
         if (proceed) {
-            const url = `http://localhost:5000/cycle/${id}`
+            const url = `https://hidden-taiga-01950.herokuapp.com/cycle/${id}`
             fetch(url, {
                 method: 'DELETE'
             })

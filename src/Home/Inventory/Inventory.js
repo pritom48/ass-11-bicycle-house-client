@@ -5,7 +5,7 @@ const Inventory = () => {
     const [bicycles, setBicycles] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/cycle')
+        fetch('https://hidden-taiga-01950.herokuapp.com/cycle')
             .then(res => res.json())
             .then(data => setBicycles(data))
     }, [])
